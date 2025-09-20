@@ -35,4 +35,8 @@ calculateBirthday();
 
 
 
-// assignment
+// assignment 4
+const firstDay = new Date()
+firstDay.setDate(1)
+console.log(firstDay)
+
