@@ -122,4 +122,39 @@ function utcToLocal(utcString){
     var date = new Date(utcString)
     return date.toLocaleString();
 }
+// utcToLocal();
 console.log(utcToLocal("2025-09-20T10:00:00Z"))
+
+
+
+
+// Assignmen 19
+function formatDate() {
+  var d = new Date();
+
+  var year  = d.getFullYear();
+  var month = d.getMonth() + 1;   // months start at 0
+  var day   = d.getDate();
+
+  // add leading zeros
+  if (month < 10) month = "0" + month;
+  if (day < 10) day = "0" + day;
+
+  return year + "-" + month + "-" + day;
+}
+
+// Example:
+console.log(formatDate());  // 👉 "2025-09-20"
+
+
+
+// assignment 20
+function daysInMonth(month, year) {
+  // month is 1–12 (1 = Jan, 12 = Dec)
+  return new Date(year, month, 0).getDate();
+}
+
+// 🔹Examples:
+console.log(daysInMonth(2, 2024)); // 👉 29 (Feb 2024 is a leap year)
+console.log(daysInMonth(2, 2025)); // 👉 28
+console.log(daysInMonth(8, 2025)); // 👉 31 (August 2025)
