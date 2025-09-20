@@ -31,7 +31,7 @@ console.log(calculateDays)
 }
 
 calculateBirthday();
-
+// console.log(calculateBirthday())
 
 
 
@@ -39,4 +39,15 @@ calculateBirthday();
 const firstDay = new Date()
 firstDay.setDate(1)
 console.log(firstDay)
+
+
+
+// Assignment 5
+function lastDate(){
+    const current = new Date()
+    return new Date(current.getFullYear(), current.getMonth() + 1, 0).getDate();
+
+}
+console.log(lastDate())
+
 
