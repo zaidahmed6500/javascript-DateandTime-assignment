@@ -51,3 +51,20 @@ function lastDate(){
 console.log(lastDate())
 
 
+
+
+// Assigmnet 9
+function checkDay(dateString){
+    var date = new Date(dateString)
+    var day = date.getDay()
+
+    if(day === 0 || day === 6){
+        return "Weekend";
+    }
+    else{
+        return "Weekday";
+    }
+}
+
+console.log(checkDay("2025-09-20"))
+console.log(checkDay("2025-09-22"))
